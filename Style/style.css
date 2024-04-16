@@ -1,10 +1,29 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
 :root{
-	--color-bg: #1E252B;
+	--color-black: #1E252B;
+	--color-gray: rgba(255, 255, 255, 0.55);;
 	--color-white: #FFFFFF;
-	--font-Poppins-medium: 'Poppins-Medium', sans-serif;
+
+	--color-orange: #FF6E30;
+	--color-dark-orange: rgba(255, 165, 55, 0.55);;
+	--font-Poppins: 'Poppins', sans-serif;
+	--font-Lora: 'Lora', sans-serif;
+	--font-Roboto: 'Roboto', sans-serif;
 }
 body{
-	font-family: var(--font-Poppins-medium);
-	background-color: var(--color-bg);
+	font-family: var(--font-Poppins);
+	font-size: 500;
+	background-color: var(--color-black);
 	color: var(--color-white);
+}
+.awesome-input{
+	width: 400px;
+	height: 100px;
+	background-color: var(--color-black);
+	background-image: url(/Image/search.png);
+	background-repeat: no-repeat;
 }
