@@ -5,25 +5,213 @@
 }
 :root{
 	--color-black: #1E252B;
-	--color-gray: rgba(255, 255, 255, 0.55);;
+	--color-gray: rgba(255, 255, 255, 0.55);
+	--color-dark-gray: #283036;
 	--color-white: #FFFFFF;
+	--color-white-90deg: rgba(255, 255, 255, 0.9);
+	--color-signup-btn: #fdf5ff;
+	--color-text-gray: rgba(255, 255, 255, 0.78);
 
 	--color-orange: #FF6E30;
-	--color-dark-orange: rgba(255, 165, 55, 0.55);;
+	--color-dark-orange: rgba(255, 165, 55, 0.55);
 	--font-Poppins: 'Poppins', sans-serif;
 	--font-Lora: 'Lora', sans-serif;
 	--font-Roboto: 'Roboto', sans-serif;
 }
 body{
 	font-family: var(--font-Poppins);
+	font-size: 18px;
 	font-size: 500;
 	background-color: var(--color-black);
 	color: var(--color-white);
 }
+.container{
+	width: 1215px;
+	margin: 0 auto;
+	border: 1px dotted tomato;
+}
+.header{
+	margin-top: 26px;
+}
+.nav,.logo-link,.ul-link,.log-buttons{
+	display: flex;
+}
+.logo-image{
+	margin-right: 21px;
+}
+.logo-link{
+	margin-right: 257px;
+}
+.logo-text{
+	font-size: 22px;
+	font-weight: 600;
+	color: var(--color-white-90deg);
+}
+.ul-link{
+	align-items: center;
+	justify-content: space-between;
+	margin-right: 193px;
+	width: 431px;
+}
+.link-item{
+	font-size: 16px;
+	color: var(--color-gray);
+}
+.log-buttons{
+	align-items: center;
+}
+.login-btn a{
+	font-size: 16px;
+	color: var(--color-gray);
+	margin-right: 41px;
+}
+.signup-btn a{
+	font-size: 16px;
+	font-weight: 600;
+	color: var(--color-signup-btn);
+	background-color: var(--color-orange);
+	border-radius: 8px;
+	padding: 12px 28px;
+}
+.awesome-tools{
+	padding-top: 104px;
+}
+.awesome-item{
+	width: 600px;
+	height: 354px;
+}
+.awesome-title{
+	font-size: 50px;
+	line-height: 140%;
+	color: var(--color-white-90deg);
+	margin-bottom: 30px;
+}
+.dot{
+	font-size: 50px;
+	line-height: 140%;
+	color: var(--color-orange);
+}
+.awesome-text{
+	width: 487px;
+	font-weight: 400;
+	line-height: 167%;
+	color: var(--color-gray);
+	margin-bottom: 60px;
+}
+.awesome-item{
+	margin-bottom: 110px;
+}
+.awesome-search{
+	display: flex;
+	align-items: center;
+	border-radius: 15px;
+	width: 497px;
+	height: 64px;
+	background-color: var(--color-dark-gray);
+	padding: 8px 11px 8px 18px;
+
+}
+
 .awesome-input{
-	width: 400px;
-	height: 100px;
+	width: 468px;
+	height: 48px;
+	background-color: var(--color-dark-gray);
+	border: none;
+}
+.awesome-button{
+	font-size: 16px;
+	font-weight: 600;
+	color: var(--color-white);
+
+	padding: 12px 36px;
+	width: 130px;
+	height: 48px;
+	border-radius: 8px;
+	border: none;
+	background-color: var(--color-orange);
+}
+.social-list{
+	display: flex;
+	justify-content: space-between;
+	width: 190px;
+	height: 58px;
+}
+
+/*---- H2 ----*/
+.popular-title,.newcomer-title{
+	font-size: 48px;
+	line-height: 130%;
+	text-align: center;
+	color: var(--color-white-90deg);
+}
+/*------------*/
+/*---- TEXT ----*/
+
+.popular-tools-text,.newcomer-text{
+line-height: 167%;
+text-align: center;
+color: var(--color-gray);
+}
+/*--------------*/
+.popular-tools{
+	padding-top: 200px;
+}
+.popular-title,.popular-tools-title,.newcomer-tools-title{
+	font-size: 24px;
+	line-height: 130%;
+	color: var(--color-text-gray);
+	}
+	.tools-text-card{
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 187%;
+		color: var(--color-gray);
+	}
+	.popular-text,.newcomer-text{
+		font-weight: 400;
+		font-size: 18px;
+		color: var(--color-dark-orange);
+	}
+.popular-title{
+	margin-bottom: 25px;
+}
+.popular-tools-text{
+	width: 437px;
+	height: 60px;
+}
+.popular-image{
+	width: 64px;
+	height: 64px;
+}
+.like-image{
+	width: 28px;
+	height: 28px;
+}
+.folder-image{
+	width: 30px;
+	height: 30px;
+}
+.popular-btn{
+	width: 106px;
+	height: 42px;
+	padding: 9px 35px;
 	background-color: var(--color-black);
-	background-image: url(/Image/search.png);
-	background-repeat: no-repeat;
+	color: var(--color-gray);
+	border-radius: 8px;
+	border: none;
+}
+.loadmore-btn{
+	font-size: 20px;
+	padding: 17px 38px;
+	color: var(--color-orange);
+	border-radius: 8px;
+	width: 184px;
+	height: 64px;
+	background-color: var(--color-black);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.trusted-title{
+font-size: 24px;
+color: var(--color-gray);
 }
