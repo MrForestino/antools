@@ -156,6 +156,15 @@ color: var(--color-gray);
 .popular-tools{
 	padding-top: 200px;
 }
+.popular-list{
+	display: flex;
+	flex-wrap: wrap;
+	flex-basis: calc((100% - 48px)/ 2);
+	gap: 24px;
+}
+.popular-item{
+	display: flex;
+}
 .popular-title,.popular-tools-title,.newcomer-tools-title{
 	font-size: 24px;
 	line-height: 130%;
@@ -178,10 +187,6 @@ color: var(--color-gray);
 .popular-tools-text{
 	width: 437px;
 	height: 60px;
-}
-.popular-image{
-	width: 64px;
-	height: 64px;
 }
 .like-image{
 	width: 28px;
