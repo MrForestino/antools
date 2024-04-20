@@ -300,6 +300,9 @@ color: var(--color-gray);
 .newcomer-tools{
 	padding-top: 200px;
 }
+.flex-newcomer{
+	display: flex;
+}
 .newcomer-subtext{
 	color: var(--color-gray);
 	width: 427px;
@@ -314,7 +317,6 @@ color: var(--color-gray);
 	height: 638px;
 	column-gap: 24px;
 	row-gap: 50px;
-	transform: translate(700px,0);
 }
 .newcomer-item{
 	display: flex;
@@ -322,19 +324,29 @@ color: var(--color-gray);
 	justify-content: center;
 	width: 288px;
 	height: 284px;
-	background-color: var(--color-dark-gray);
 	border-radius: 15px;
 }
+.text-card-newcomer{
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 214%;
+	color: var(--color-gray);
+
+	width: 245px;
+	height: 60px;
+
+	margin-top: 30px;
+}
 .newcomer-btn{
-	
 	padding: 16px 40px;
 	border-radius: 8px;
-	color: var(--color-white);
+	color: var(--color-white); 
 	background-color: var(--color-orange);
 }
 .newcomer-card{
 	width: 245px;
 	height: 228px;
+	margin: 28px 21px 28px 22px;
 }
 .folder-image-newcomer{
 	margin-right: 43px;
