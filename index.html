@@ -101,13 +101,15 @@
 								<img class="popular-image" src="./Image/figma-tools.svg" width="64px"/>
 								<div class="popular-text-container">
 									<p class="popular-tools-title">FIGMA</p>
-									<p class="popular-text">Free</p>
+									<p class="price-text">Free</p>
 								</div>
-								<p class="tools-text-card">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-								<div class="popular-img">
-									<img class="like-image" src="./Image/like-popular.png"/>
-									<img class="folder-image" src="./Image/folder-tools.png"/>
-									<button class="popular-btn" type="submit" >Visit</button>
+								<div class="tools-info-container">
+										<p class="text-card">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+									<div class="popular-img">
+										<img class="like-image" src="./Image/like-popular.png"/>
+										<img class="folder-image" src="./Image/folder-tools.png"/>
+										<button class="visit-btn" type="submit" >Visit</button>
+									</div>
 								</div>
 							</li>
 							<li class="popular-item">
@@ -115,13 +117,13 @@
 									<img class="popular-image" src="./Image/sketch-tools.svg" width="64px"/>
 									<div class="popular-text-container">
 										<p class="popular-tools-title">Sketch</p>
-										<p class="popular-text">Trial & Paid</p>
+										<p class="price-text">Trial & Paid</p>
 									</div>
-									<p class="tools-text-card">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+									<p class="text-card">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 									<div class="popular-img">
 										<img class="like-image" src="./Image/like-popular.png"/>
 										<img class="folder-image" src="./Image/folder-tools.png"/>
-									<button class="popular-btn" type="submit" >Visit</button>
+									<button class="visit-btn" type="submit" >Visit</button>
 								</div>
 								</li>
 								<li class="popular-item">
@@ -129,13 +131,13 @@
 										<img class="popular-image" src="./Image/vscd-tools.svg" width="64px"/>
 										<div class="popular-text-container">
 											<p class="popular-tools-title">Visual Studio Code</p>
-											<p class="popular-text">Free</p>
+											<p class="price-text">Free</p>
 										</div>
-										<p class="tools-text-card">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+										<p class="text-card">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 										<div class="popular-img">
 											<img class="like-image" src="./Image/like-popular.png"/>
 											<img class="folder-image" src="./Image/folder-tools.png"/>
-											<button class="popular-btn" type="submit" >Visit</button>
+											<button class="visit-btn" type="submit" >Visit</button>
 										</div>
 									</li>
 									<li class="popular-item">
@@ -143,13 +145,13 @@
 											<img class="popular-image" src="./Image/notion-tools.png" width="64px"/>
 											<div class="popular-text-container">
 												<p class="popular-tools-title">Notion</p>
-												<p class="popular-text">Free & Paid</p>
+												<p class="price-text">Free & Paid</p>
 											</div>
-											<p class="tools-text-card">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+											<p class="text-card">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 											<div class="popular-img">
 												<img class="like-image" src="./Image/like-popular.png"/>
 												<img class="folder-image" src="./Image/folder-tools.png"/>
-												<button class="popular-btn" type="submit" >Visit</button>
+												<button class="visit-btn" type="submit" >Visit</button>
 												</div>
 											</li>
 										<li class="popular-item">
@@ -157,14 +159,14 @@
 												<img class="popular-image" src="./Image/Slack-tools.png" width="64px"/>
 												<div class="popular-text-container">
 													<p class="popular-tools-title">Slack</p>
-													<p class="popular-text">Free & Paid</p>
+													<p class="price-text">Free & Paid</p>
 												</div>
-												<p class="tools-text-card">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+												<p class="text-card">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 												<div class="popular-img">
 													<img class="like-image" src="./Image/like-popular.png"/>
 													<img class="folder-image" src="./Image/folder-tools.png"/>
 
-													<button class="popular-btn" type="submit" >Visit</button>
+													<button class="visit-btn" type="submit" >Visit</button>
 													</div>
 												</li>
 											<li class="popular-item">
@@ -172,14 +174,14 @@
 													<img class="popular-image" src="./Image/invision-tools.svg" width="64px"/>
 													<div class="popular-text-container">
 														<p class="popular-tools-title">Invision</p>
-														<p class="popular-text">Free & Paid</p>
+														<p class="price-text">Free & Paid</p>
 													</div>
-													<p class="tools-text-card">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+													<p class="text-card">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 													<div class="popular-img">
 														<img class="like-image" src="./Image/like-popular.png"/>
 														<img class="folder-image" src="./Image/folder-tools.png"/>
 	
-														<button class="popular-btn" type="submit" >Visit</button>
+														<button class="visit-btn" type="submit" >Visit</button>
 														</div>
 													</li>
 											</ul>
@@ -208,54 +210,64 @@
 			</div>
 		</section>
 		<section class="newcomer-tools">
-			<div class="container">
-				<p class="newcomer-title">Newcomer Tools</p>
-				<p class="newcomer-subtext">Wow! see the latest update of the most recommended tools from reliable designers and developers</p>
-				<button class="newcomer-btn">Explore more</button>
+			<div class="container flex-newcomer">
+				<!-- <div class="newcomer-tools-text"> -->
+					<p class="newcomer-title">Newcomer Tools</p>
+					<p class="newcomer-subtext">Wow! see the latest update of the most recommended tools from reliable designers and developers</p>
+					<button class="newcomer-btn">Explore more</button>
+				<!-- </div> -->
 				<ul class="newcomer-list">
-					<li class="newcomer-list">
-							<h3 class="newcomer-tools-title">Zeplin</h3>
-							<p class="newcomer-text">Free & Paid</p>
-							<img src="./Image/zeplin-newcomer.png"/>
-							<p class="newcomer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-							<div class="like-border">
+					<li class="newcomer-item">
+							<div class="newcomer-card">
+								<h3 class="newcomer-tools-title">Zeplin</h3>
+								<p class="price-text">Free & Paid</p>
+								<img class="newcomer-image-tools" src="./Image/zeplin-newcomer.png"/>
+								<p class="text-card">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								<div class="like-border">
 								<img class="like-image" src="./Image/like-popular.png"/>
+								</div>
+								<img class="folder-image" src="./Image/folder-tools.png"/>
+								<button  class="visit-btn" type="submit" >Visit</button>
 							</div>
-							<img class="folder-image" src="./Image/folder-tools.png"/>
-							<button  class="newcomer-btn" type="submit" >Visit</button>
 						</li>
-						<li class="newcomer-list">
-							<h3 class="newcomer-tools-title">PHPStorm</h3>
-							<p class="newcomer-text">Free</p>
-							<img src="./Image/phpstorm-newcomer.png"/>
-							<p class="newcomer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						<li class="newcomer-item">
+							<div class="newcomer-card">
+								<h3 class="newcomer-tools-title">PHPStorm</h3>
+							<p class="price-text">Free</p>
+							<img class="newcomer-image-tools" src="./Image/phpstorm-newcomer.png"/>
+							<p class="text-card">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 							<div class="like-border">
 								<img class="like-image" src="./Image/like-popular.png"/>
 							</div>
 							<img class="folder-image" src="./Image/folder-tools.png"/>
-							<button  class="newcomer-btn" type="submit" >Visit</button>
+							<button  class="visit-btn" type="submit" >Visit</button>
+							</div>
 						</li>
-						<li class="newcomer-list">
-							<h3 class="newcomer-tools-title">Toolbox</h3>
-							<p class="newcomer-text">Free</p>
-							<img src="./Image/toolbox-newcomer.png"/>
-							<p class="newcomer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						<li class="newcomer-item">
+							<div class="newcomer-card">
+								<h3 class="newcomer-tools-title">Toolbox</h3>
+							<p class="price-text">Free</p>
+							<img class="newcomer-image-tools" src="./Image/toolbox-newcomer.png"/>
+							<p class="text-card">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 							<div class="like-border">
 								<img class="like-image" src="./Image/like-popular.png"/>
 							</div>
 							<img class="folder-image" src="./Image/folder-tools.png"/>
-							<button  class="newcomer-btn" type="submit" >Visit</button>
+							<button  class="visit-btn" type="submit" >Visit</button>
+							</div>
 						</li>
-						<li class="newcomer-list">
-							<h3 class="newcomer-tools-title">Procreate</h3>
-							<p class="newcomer-text">Paid</p>
-							<img src="./Image/procreate-newcomer.png"/>
-							<p class="newcomer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						<li class="newcomer-item">
+							<div class="newcomer-card">
+								<h3 class="newcomer-tools-title">Procreate</h3>
+							<p class="price-text">Paid</p>
+							<img class="newcomer-image-tools" src="./Image/procreate-newcomer.png"/>
+							<p class="text-card">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 							<div class="like-border">
 								<img class="like-image" src="./Image/like-popular.png"/>
 							</div>
 							<img class="folder-image" src="./Image/folder-tools.png"/>
-							<button  class="newcomer-btn" type="submit" >Visit</button>
+							<button  class="visit-btn" type="submit" >Visit</button>
+							</div>
 						</li>
 					</ul>
 			</div>
@@ -279,58 +291,64 @@
 	<footer class="footer">
 		<div class="container">
 			<section class="become-contributor">
-				<div class="container">
+				<div class="container flex-become-contributor">
 					<h2 class="contributor-title">Become a contributor?</h2>
+					<div class="contribut-text-container">
 					<p class="contributor-text">Join us and get tips & tricks to become a great Designer and Developer</p>
+					</div>
 					<form class="contributor-search">
 						<input type="text" class="contributor-input" placeholder="Enter your email..."><button type="submit" class="contributor-button">Join Us</button>
 					</form>
 				</div>
 			</section>
-			<a class="logo-link" href="/">
-				<img 
-				class="logo-image"
-				src="./Image/antools-logo.png"
-				/>
-				<span class="logo-text">antools.</span>
-			</a>
-			<div class="copyright">
-				<h2 class="copyright-text">Copyright 2021. Antools</h2>
-				<p class="text">Antool is a web collection of information on paid or free Design and Development tools</p>
-			</div>
-			<address class="address">
-				<h2>Contact US</h2>
-				<ul>
-					<h2>Contact Us</h2>
-					<li class="address-item"><a class="item-address-email" href="mailto:antools@awesome.com" > antools@awesome.com</a></li>
-					<li class="address-item ">M Building, No.10 A</li>
-					<li class="address-item"><a  class="item-address-tel" href="tel:+621987463">+621987463</a></li>
-				</ul>
-			</address>
-			<div class="copyright">
-				<h2 class="copyright-title">Categories</h2>
-				<ul class="copyright-list">
-					<li class="copyright-item">
-						<a href="/" class="link-design">Design</a>
-					</li>
-					<li class="copyright-item">
-						<a href="/" class="link-development">Development</a>
-					</li>
-				</ul>
-			</div>
-			<div class="company-info">
-				<h2 class="company-info-title">Company Info</h2>
-				<ul class="company-info-list">
-					<li class="company-info-item">
-						<a href="/" class="link-aboutus">About Us</a>
-					</li>
-					<li class="company-info-item">
-						<a href="/" class="link-ourpartners">Our Partners</a>
-					</li>
-					<li class="company-info-item">
-						<a href="/" class="link-blog">Blog</a>
-					</li>
-				</ul>
+			<div class="footer-line"></div>
+			<div class="container-all-items-footer">
+				<a class="logo-link" href="/">
+					<img 
+					class="logo-image"
+					src="./Image/antools-logo.png"
+					/>
+					<span class="logo-text">antools.</span>
+				</a>
+				<div class="flex-container-footer">
+					<div class="copyright">
+						<h2 class="copyright-title">Copyright 2021. Antools</h2>
+						<p class="copyright-text">Antool is a web collection of information on paid or free Design and Development tools</p>
+					</div>
+					<address class="address">
+						<ul>
+							<h2 class="copyright-title">Contact Us</h2>
+							<li class="address-item"><a  class="item-address-tel" href="tel:+621987463">+621987463</a></li>
+							<li class="address-item ">M Building, No.10 A</li>
+							<li class="address-item"><a class="item-address-email" href="mailto:antools@awesome.com" > antools@awesome.com</a></li>
+						</ul>
+					</address>
+					<div class="copyright">
+						<h2 class="copyright-title">Categories</h2>
+						<ul class="copyright-list">
+							<li class="copyright-item">
+								<a href="/" class="link-design">Design</a>
+							</li>
+							<li class="copyright-item">
+								<a href="/" class="link-development">Development</a>
+							</li>
+						</ul>
+					</div>
+					<div class="company-info">
+						<h2 class="copyright-title">Company Info</h2>
+						<ul class="company-info-list">
+							<li class="company-info-item">
+								<a href="/" class="link-aboutus">About Us</a>
+							</li>
+							<li class="company-info-item">
+								<a href="/" class="link-ourpartners">Our Partners</a>
+							</li>
+							<li class="company-info-item">
+								<a href="/" class="link-blog">Blog</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</div>
 	</footer>
