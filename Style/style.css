@@ -187,7 +187,7 @@ color: var(--color-gray);
 	width: 392px;
 	height: 294px;
 	border-radius: 15px;
-	background-color: var(--color-dark-gray);
+	background-color: var(--color-black);
 	flex-basis: calc((100% - 48px) / 3);
 }
 .tool-card{
@@ -204,7 +204,7 @@ color: var(--color-gray);
 /* .popular-text-container{
 	display: block;
 } */
-.popular-title,.popular-tools-title,.newcomer-tools-title{
+.popular-tools-title,.newcomer-tools-title{
 	font-size: 24px;
 	line-height: 130%;
 	color: var(--color-text-gray);
@@ -302,6 +302,7 @@ color: var(--color-gray);
 }
 .flex-newcomer{
 	display: flex;
+	justify-content: space-between;
 }
 .newcomer-subtext{
 	color: var(--color-gray);
@@ -342,6 +343,7 @@ color: var(--color-gray);
 	border-radius: 8px;
 	color: var(--color-white); 
 	background-color: var(--color-orange);
+	border: none;
 }
 .newcomer-card{
 	width: 245px;
