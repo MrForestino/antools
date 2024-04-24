@@ -172,6 +172,10 @@ color: var(--color-gray);
 	padding-top: 200px;
 	padding-bottom: 200px;
 }
+.popular-text-container{
+	width: 437px;
+	height: 60px;
+}
 .popular-list{
 	display: flex;
 	flex-wrap: wrap;
@@ -227,10 +231,6 @@ color: var(--color-gray);
 	}
 .popular-title{
 	margin-bottom: 25px;
-}
-.popular-tools-text{
-	width: 437px;
-	height: 60px;
 }
 .popular-text{
 	margin-left: 30px;
