@@ -371,6 +371,118 @@ color: var(--color-gray);
 	width: 64px;
 	height: 64px;
 }
+
+
+
+.flex-person,.swiper-slide{
+	display: flex;
+	/* align-items: center; */
+}
+.swiper-slide {
+  position: relative; /* Додайте відносне позиціонування для `.swiper-slide` */
+}
+.circle::before{
+	content: '';
+	display: flex;
+	position: absolute;
+	width: 380px;
+	height: 380px;
+	background-image: url(../Image/circle-bg.png);
+	background-repeat: no-repeat;
+	top: 80px;
+	z-index: 1;
+}
+.person-image{
+	z-index: 2;
+}
+.description-person{
+	margin-top: 120px;
+	margin-left: 55px;
+	width: 393px;
+	height: 180px;
+
+	font-family: var(--third-family);
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 214%;
+	letter-spacing: 0.01em;
+	color: rgba(255, 255, 255, 0.78);
+
+}
+.border-name{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	border-radius: 8px;
+	width: 265px;
+	height: 91px;
+	background-image: radial-gradient(circle at bottom right,#254863, rgba(40, 48, 54, 0.2) 13%);
+	backdrop-filter: blur(10px);
+
+
+	position:absolute;
+	top: 360px;
+	left: 150px;
+	z-index: 3;
+}
+.coma::before{
+	content: '';
+	display: flex;
+	position: absolute;
+	width: 380px;
+	height: 380px;
+	background-image: url(../Image/koma.svg);
+	background-repeat: no-repeat;
+	top: 80px;
+	z-index: 1;
+}
+/*Стрелки*/
+
+/* Додайте стилі для активних і неактивних стрілок навігації */
+.swiper-button-prev::after, .swiper-button-next::after {
+	width: 48px;
+	font-weight: 700;
+	color: #FF6E30;
+}
+
+.swiper-button-prev.swiper-button-disabled::after, 
+.swiper-button-next.swiper-button-disabled::after {
+  color:  #5D6266; /* Колір неактивних стрілок */
+
+}
+
+/* .swiper-button-prev::after,
+.swiper-button-next::after{
+	width: 48px;
+	font-weight: 700;
+	color: #5D6266;
+}
+swiper-button-prev-active::after,
+.swiper-button-next::after{
+	width: 48px;
+	font-weight: 700;
+	color: #FF6E30;
+} */
+.swiper-pagination {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #FF6E30; /* Колір активного елемента */
+}
+.swiper-pagination-bullet {
+	width: 44px;
+	height: 6px;
+  background-color: #283036; /* Колір неактивних елементів */
+	margin: 0 18px;
+	border-radius: 15px;
+}
+
+
+
 .footer{
 	padding-top: 250px;
 	padding-bottom: 139px;
