@@ -83,7 +83,20 @@ body{
 }
 .awesome-tools{
 	padding-top: 104px;
+
 }
+.awesome-background::after {
+  content: '';
+  display: flex;
+  position: absolute;
+	top: 146px;
+	left: 1080px;
+  width: 100%;
+  height: 100%; 
+  background-image: url("../Image/antools-after-bg.svg");
+  background-repeat: no-repeat;
+}
+
 .awesome-item{
 	width: 600px;
 	height: 354px;
@@ -166,16 +179,17 @@ body{
 line-height: 167%;
 text-align: center;
 color: var(--color-gray);
+
+margin: 0 auto;
+width: 437px;
+height: 60px;
 }
 /*--------------*/
 .popular-tools{
 	padding-top: 200px;
 	padding-bottom: 200px;
 }
-.popular-text-container{
-	width: 437px;
-	height: 60px;
-}
+
 .popular-list{
 	display: flex;
 	flex-wrap: wrap;
