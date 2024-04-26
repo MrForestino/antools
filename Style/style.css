@@ -28,10 +28,13 @@ body{
 	background-color: var(--color-black);
 	color: var(--color-white);
 }
+button{
+	cursor: pointer;
+}
 .container{
 	width: 1440px;
 	margin: 0 auto;
-	border: 1px dotted tomato;
+	/* border: 1px dotted tomato; */
 }
 .header{
 	margin-top: 26px;
@@ -290,6 +293,7 @@ height: 60px;
 	height: 253px;
 	border-radius: 25px;
 	background-color: var(--color-tools-bg);
+	padding-top: 55px;
 }
 .trusted-container{
 	background-image: radial-gradient(circle at top left,#4b2f33, rgba(255,0,0,0) 12%);
@@ -307,10 +311,10 @@ height: 60px;
 .trusted-title{
 text-align: center;
 font-size: 24px;
-margin-top: 55px;
 margin-bottom: 55px;
 color: var(--color-gray);
 }
+
 .newcomer-tools{
 	padding-top: 200px;
 }
@@ -365,6 +369,8 @@ color: var(--color-gray);
 	margin: 28px 21px 28px 22px;
 }
 .folder-image-newcomer{
+	width: 30px;
+	height: 30px;
 	margin-right: 43px;
 }
 .newcomer-image-tools{
@@ -372,10 +378,13 @@ color: var(--color-gray);
 	height: 64px;
 }
 
-
+.person{
+	padding-top: 200px;
+}
 
 .flex-person,.swiper-slide{
 	display: flex;
+justify-content: center;
 	/* align-items: center; */
 }
 .swiper-slide {
@@ -424,7 +433,7 @@ color: var(--color-gray);
 
 	position:absolute;
 	top: 360px;
-	left: 150px;
+	left: 460px;
 	z-index: 3;
 }
 .coma::before{
@@ -572,11 +581,12 @@ swiper-button-prev-active::after,
 	font-size: 16px;
   font-weight: 600;
 	color: var(--color-white);
-  padding: 12px 36px;
   border-radius: 8px;
   background-color: var(--color-orange);
 	border: none;
 	cursor: pointer;
+	width: 130px;
+	height: 48px;
 }
 .logo-link-footer{
 	align-items: center;
