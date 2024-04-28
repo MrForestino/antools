@@ -87,7 +87,7 @@ button{
 }
 .awesome-background::after {
   content: '';
-  display: flex;
+  display: block;
   position: absolute;
 	top: 146px;
 	left: 1170px;
@@ -240,9 +240,6 @@ height: 60px;
 	width: 64px;
 	height: 64px;
 }
-/* .popular-text-container{
-	display: block;
-} */
 .popular-tools-title,.newcomer-tools-title{
 	font-size: 24px;
 	line-height: 130%;
@@ -321,7 +318,6 @@ height: 60px;
 }
 .trusted-container{
 	background-image: radial-gradient(circle at top left,#4b2f33, rgba(255,0,0,0) 12%);
-	/* background-image: linear-gradient(120deg, #4b2f33, rgba(255,0,0,0) 15%); */
 	backdrop-filter: blur(50px);
 }
 .trusted-list{
@@ -355,7 +351,6 @@ color: var(--color-gray);
 .newcomer-list{
 	display: flex;
 	flex-wrap: wrap;
-	/* float: right; */
 	width: 600px;
 	height: 638px;
 	column-gap: 24px;
@@ -409,10 +404,10 @@ color: var(--color-gray);
 .flex-person,.swiper-slide{
 	display: flex;
 justify-content: center;
-	/* align-items: center; */
+
 }
 .swiper-slide {
-  position: relative; /* Додайте відносне позиціонування для `.swiper-slide` */
+  position: relative;
 }
 .circle::before{
 	content: '';
@@ -487,9 +482,6 @@ justify-content: center;
 	top: 80px;
 	z-index: 1;
 }
-/*Стрелки*/
-
-/* Додайте стилі для активних і неактивних стрілок навігації */
 .swiper-button-prev::after, .swiper-button-next::after {
 	width: 48px;
 	font-weight: 700;
@@ -498,34 +490,22 @@ justify-content: center;
 
 .swiper-button-prev.swiper-button-disabled::after, 
 .swiper-button-next.swiper-button-disabled::after {
-  color:  #5D6266; /* Колір неактивних стрілок */
+  color:  #5D6266; 
 
 }
 
-/* .swiper-button-prev::after,
-.swiper-button-next::after{
-	width: 48px;
-	font-weight: 700;
-	color: #5D6266;
-}
-swiper-button-prev-active::after,
-.swiper-button-next::after{
-	width: 48px;
-	font-weight: 700;
-	color: #FF6E30;
-} */
 .swiper-pagination {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background-color: #FF6E30; /* Колір активного елемента */
+  background-color: #FF6E30; 
 }
 .swiper-pagination-bullet {
 	width: 44px;
 	height: 6px;
-  background-color: #283036; /* Колір неактивних елементів */
+  background-color: #283036; 
 	margin: 0 18px;
 	border-radius: 15px;
 }
